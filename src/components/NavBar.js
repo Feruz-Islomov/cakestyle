@@ -1,6 +1,7 @@
 import React from "react";
 import ScrollToTop from "react-scroll-to-top";
 import AnchorLink from "react-anchor-link-smooth-scroll";
+import { Link } from "react-router-dom";
 
 const NavBar = () => {
   return (
@@ -11,11 +12,10 @@ const NavBar = () => {
       </div>
 
       <div className="navleft">
-        <AnchorLink offset="8" href="/menubar">
-          Menu
-        </AnchorLink>
-        <AnchorLink href="/contact">Contact</AnchorLink>
         <AnchorLink href="/contact">Firuz: 998 933 488 522</AnchorLink>
+        <Link to="/">Menu</Link>
+        <AnchorLink href="/contact">Contact</AnchorLink>
+        <Link to="/productmanage">Admin</Link>
       </div>
     </div>
   );
