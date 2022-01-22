@@ -6,6 +6,7 @@ const PizzaCard = ({ pizza }) => {
       {pizza.map((product, key) => {
         return (
           <div id="pizza" className="menucard pizza" key={key}>
+            <button className="addcard">+</button>
             <div className="carditems">
               <div className="name">{product.name}</div>
               <img className="meimg" src={product.img} alt={product.name} />

@@ -8,7 +8,9 @@ const NavBar = () => {
     <div id="home" className="navbar">
       <ScrollToTop smooth color="blue" style={{ textAlign: "center" }} />
       <div>
-        <img className="logo" src=".\photo\pl1.png" alt="pizzaHut" />
+        <Link to="/">
+          <img className="logo" src=".\photo\pl1.png" alt="pizzaHut" />
+        </Link>
       </div>
 
       <div className="navleft">
@@ -16,6 +18,10 @@ const NavBar = () => {
         <Link to="/">Menu</Link>
         <AnchorLink href="/contact">Contact</AnchorLink>
         <Link to="/productmanage">Admin</Link>
+        <Link to="/cart">
+          <i className="fas fa-cart-arrow-down"></i>
+          <sup>2</sup>
+        </Link>
       </div>
     </div>
   );

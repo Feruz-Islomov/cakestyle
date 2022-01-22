@@ -6,6 +6,7 @@ const SauceCard = ({ sauce }) => {
       {sauce.map((product, key) => {
         return (
           <div id="sauce" className="menucard sauce" key={key}>
+            <button className="addcard">+</button>{" "}
             <div className="carditems">
               <div className="name">{product.name}</div>
               <img className="meimg" src={product.img} alt={product.name} />

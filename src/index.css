@@ -6,6 +6,7 @@ body {
   background-repeat: repeat;
   background-size: auto;
   position: relative;
+  font-family: Arial, Helvetica, sans-serif;
 }
 /* navbar */
 /* navbar */
@@ -93,12 +94,25 @@ body {
   text-align: center;
   font-family: Arial, Helvetica, sans-serif;
   border: 1px solid rgb(255, 255, 255);
+  position: relative;
 }
 .groupedcards {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
   align-items: flex-start;
+}
+.addcard {
+  font-size: 2.3em;
+  font-weight: bolder;
+  padding: 0 10px;
+  background-color: bisque;
+  border-radius: 50px;
+  position: absolute;
+  top: 20px;
+  right: -18px;
+  z-index: 1;
+  cursor: pointer;
 }
 .name {
   font-size: large;
@@ -171,6 +185,7 @@ body {
   flex-wrap: wrap;
   justify-content: space-around;
   align-items: center;
+  width: 100%;
 }
 
 /* form */
@@ -270,4 +285,86 @@ body {
   border: none;
   border-radius: 7px;
   cursor: pointer;
+}
+/* cart */
+/* cart */
+/* cart */
+sup {
+  background-color: red;
+  color: white;
+  border-radius: 20px;
+  padding: 5px;
+}
+.cartbody {
+  margin-top: 4.8em;
+}
+.cartbody > * {
+  background-color: #ffd9ba;
+  margin: 0 1em;
+  border-radius: 15px;
+}
+.addedcart {
+  border-bottom: 1px solid rgb(58, 55, 55);
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+.total {
+  border-top: 1px solid green;
+  margin-bottom: 4em;
+  margin-top: 4em;
+  padding: 10px;
+
+  float: right;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.cleft,
+.cright {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin: 0 5px;
+}
+.cleft > * {
+  margin: 0 5px;
+}
+.cartimg {
+  width: 70px;
+  height: 70px;
+}
+.cartitemname {
+  font-size: 20px;
+  font-weight: bold;
+}
+.cartitemprice {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.cartbtn {
+  font-size: 3em;
+  font-weight: bolder;
+  width: 1em;
+  height: 1em;
+  align-items: center;
+  text-align: center;
+  background-color: bisque;
+}
+.plus {
+  font-size: 40px;
+  font-weight: bold;
+  padding: 0 15px;
+  color: white;
+  border-radius: 10px;
+  background-color: tomato;
+  border: none;
+  cursor: pointer;
+}
+.checkout {
+  font-size: 2em;
+  margin-top: 15px;
 }
