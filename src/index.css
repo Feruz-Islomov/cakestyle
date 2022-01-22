@@ -368,3 +368,65 @@ sup {
   font-size: 2em;
   margin-top: 15px;
 }
+
+/* checkout */
+/* checkout */
+/* checkout */
+
+.paychecklist {
+  background-color: bisque;
+  box-shadow: 0 0 18px black;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+  padding: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+}
+.chitems {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.fa-check-circle {
+  font-size: 20px;
+  align-self: center;
+  color: green;
+}
+
+/* register */
+/* register */
+/* register */
+.register {
+  margin-top: 70px;
+  background-color: rgb(255, 240, 245, 0.9);
+}
+.registerbody {
+  margin-left: 10px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.regcard {
+  background-color: burlywood;
+  width: 200px;
+  border-radius: 5px;
+  margin: 5px;
+  padding: 5px;
+}
+.process {
+  background-color: rgb(41, 226, 41);
+}
+.finished {
+  background-color: rgb(255, 134, 134);
+}
+
+/* driver */
+/* driver */
+/* driver */
+.driverpage {
+  margin-top: 70px;
+  background-color: lemonchiffon;
+}

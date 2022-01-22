@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 export const Cart = () => {
   return (
@@ -36,9 +37,11 @@ export const Cart = () => {
         <p>
           <i class="fas fa-shipping-fast"></i> + 8000
         </p>
-        <button class="plus checkout">
-          checkout <i class="fas fa-credit-card"></i>
-        </button>
+        <Link to="/userpay">
+          <button class="plus checkout">
+            checkout <i class="fas fa-credit-card"></i>
+          </button>
+        </Link>
       </div>
     </div>
   );

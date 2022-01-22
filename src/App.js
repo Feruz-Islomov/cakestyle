@@ -7,6 +7,9 @@ import { BrowserRouter as Router, Route } from "react-router-dom";
 import ProductManage from "./components/ProductManage";
 import Form from "./components/Form";
 import { Cart } from "./components/Cart";
+import UserPayPage from "./components/UserPayPage";
+import RegisterPage from "./components/RegisterPage";
+import DriverPage from "./components/DriverPage";
 
 function App() {
   const [products, setProducts] = useState();
@@ -30,9 +33,10 @@ function App() {
         />
         <Route exact path="/form/:id" render={() => <Form />} />
         <Route exact path="/cart" render={() => <Cart />} />
+        <Route exact path="/userpay" render={() => <UserPayPage />} />
+        <Route exact path="/register" render={() => <RegisterPage />} />
+        <Route exact path="/driver" render={() => <DriverPage />} />
       </Router>
-
-      <Contact />
     </div>
   );
 }

@@ -5,6 +5,7 @@ import PizzaCard from "./Cards/PizzaCard";
 import SauceCard from "./Cards/SauceCard";
 import { useEffect, useState } from "react";
 import Aos from "aos";
+import Contact from "./Contact";
 
 const MenuBodyCards = (props) => {
   const { products } = props;
@@ -53,6 +54,7 @@ const MenuBodyCards = (props) => {
         </div>
       </div>
       {products ? <div className="menubody"> {showbody()}</div> : null}
+      <Contact />
     </>
   );
 };
